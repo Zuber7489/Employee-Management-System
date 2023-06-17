@@ -1,0 +1,46 @@
+<div id="wrapper">
+
+    <!-- Sidebar -->
+ <app-sidebar></app-sidebar>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+<app-admin-navbar></app-admin-navbar>
+    <div id="page-content-wrapper">
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <h1 class="text-warning">All Details</h1>
+                    <br>
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Position</th>
+                            <th scope="col">Salary</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let alldata of data let i=index">
+                            <th scope="row">{{i+1}}</th>
+                            <td>{{alldata.name}}</td>
+                            <td>{{alldata.email}}</td>
+                            <td>{{alldata.position}}</td>
+                            <td>{{alldata.salary}}</td>
+                          </tr>
+                 
+                        </tbody>
+                      </table>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->

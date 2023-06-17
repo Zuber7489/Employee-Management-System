@@ -1,0 +1,19 @@
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <p>
+                Admin Panel
+            </p>
+        </li>
+        <li>
+            <a routerLink="/admin">Dashboard</a>
+        </li>
+        <li>
+            <a routerLink="/AllUsers">All Users</a>
+        </li>
+        <li>
+            <p class="mt-2">{{ getCurrentTime() | date:'medium'}}</p>
+        </li>
+
+    </ul>
+</div>

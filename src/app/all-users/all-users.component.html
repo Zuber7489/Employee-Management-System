@@ -1,0 +1,40 @@
+<div id="wrapper">
+
+
+ <app-sidebar></app-sidebar>
+
+<app-admin-navbar></app-admin-navbar>
+    <div id="page-content-wrapper">
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <h1 class="text-warning">All Users</h1>
+                    <br>
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Password</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let userdata of data let i=index">
+                            <th scope="row">{{i+1}}</th>
+                            <td>{{userdata.name}}</td>
+                            <td>{{userdata.email}}</td>
+                            <td>{{userdata.password}}</td>
+                            
+                          </tr>
+                    
+                        </tbody>
+                      </table>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
